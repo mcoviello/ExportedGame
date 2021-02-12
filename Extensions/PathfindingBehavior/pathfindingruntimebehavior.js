@@ -25,9 +25,7 @@ var gdjs;
       this._cellHeight = behaviorData.cellHeight;
       this._extraBorder = behaviorData.extraBorder;
       this._manager = gdjs2.PathfindingObstaclesManager.getManager(runtimeScene);
-      if (this._searchContext === void 0) {
-        this._searchContext = new gdjs2.PathfindingRuntimeBehavior.SearchContext();
-      }
+      this._searchContext = new gdjs2.PathfindingRuntimeBehavior.SearchContext(this._manager);
     }
     updateFromBehaviorData(oldBehaviorData, newBehaviorData) {
       if (oldBehaviorData.allowDiagonals !== newBehaviorData.allowDiagonals) {
@@ -318,8 +316,7 @@ var gdjs;
     }
     PathfindingRuntimeBehavior2.Node = Node;
     class SearchContext {
-      constructor() {
-        this._obstacles = null;
+      constructor(obstacles) {
         this._finalNode = null;
         this._destination = [0, 0];
         this._start = [0, 0];
@@ -337,6 +334,7 @@ var gdjs;
         this._openNodes = [];
         this._closeObstacles = [];
         this._nodeCache = [];
+        this._obstacles = obstacles;
         this._distanceFunction = PathfindingRuntimeBehavior2.euclideanDistance;
       }
       setObstacles(obstacles) {
@@ -412,7 +410,7 @@ var gdjs;
             }
           }
         }
-        this._allNodes = {};
+        this._allNodes = [];
       }
       _insertNeighbors(currentNode) {
         this._addOrUpdateNode(currentNode.pos[0] + 1, currentNode.pos[1], currentNode, 1);
@@ -434,12 +432,12 @@ var gdjs;
         } else {
           this._allNodes[xPos] = [];
         }
-        let newNode = null;
+        let newNode;
         if (this._nodeCache.length !== 0) {
           newNode = this._nodeCache.shift();
           newNode.reinitialize(xPos, yPos);
         } else {
-          newNode = new gdjs2.PathfindingRuntimeBehavior.Node(xPos, yPos);
+          newNode = new Node(xPos, yPos);
         }
         let objectsOnCell = false;
         const radius = this._cellHeight > this._cellWidth ? this._cellHeight * 2 : this._cellWidth * 2;

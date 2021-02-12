@@ -2,6 +2,9 @@ var gdjs;
 (function(gdjs2) {
   class PathfindingObstaclesManager {
     constructor(runtimeScene) {
+      this.x = 0;
+      this.y = 0;
+      this.radius = 0;
       this._obstaclesHSHG = new gdjs2.HSHG.HSHG();
     }
     static getManager(runtimeScene) {

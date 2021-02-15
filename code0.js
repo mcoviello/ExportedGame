@@ -1,8 +1,8 @@
 gdjs.MenuCode = {};
 gdjs.MenuCode.GDTitleObjects1= [];
 gdjs.MenuCode.GDTitleObjects2= [];
-gdjs.MenuCode.GDNewObjectObjects1= [];
-gdjs.MenuCode.GDNewObjectObjects2= [];
+gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects1= [];
+gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects2= [];
 gdjs.MenuCode.GDStartBtnObjects1= [];
 gdjs.MenuCode.GDStartBtnObjects2= [];
 gdjs.MenuCode.GDOptsBtnObjects1= [];
@@ -139,8 +139,8 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.MenuCode.GDTitleObjects1.length = 0;
 gdjs.MenuCode.GDTitleObjects2.length = 0;
-gdjs.MenuCode.GDNewObjectObjects1.length = 0;
-gdjs.MenuCode.GDNewObjectObjects2.length = 0;
+gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects1.length = 0;
+gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects2.length = 0;
 gdjs.MenuCode.GDStartBtnObjects1.length = 0;
 gdjs.MenuCode.GDStartBtnObjects2.length = 0;
 gdjs.MenuCode.GDOptsBtnObjects1.length = 0;

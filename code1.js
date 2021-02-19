@@ -100,7 +100,7 @@ gdjs.Game_32WorldCode.eventsList0 = function(runtimeScene) {
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8404172);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8490500);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
 {gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Assets\\Music\\Main Game Theme.mp3", 0, true, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), 1);
@@ -161,7 +161,7 @@ gdjs.Game_32WorldCode.eventsList1(runtimeScene);
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8454076);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8547172);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.Game_32WorldCode.GDPlayerObjects3, gdjs.Game_32WorldCode.GDPlayerObjects4);
@@ -399,7 +399,7 @@ gdjs.Game_32WorldCode.conditionTrue_1.val = true && gdjs.Game_32WorldCode.condit
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8461916);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8555012);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -454,7 +454,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32WorldCode.GDPlayerObjects4.length;i<l;++i)
 gdjs.Game_32WorldCode.GDPlayerObjects4.length = k;}if ( gdjs.Game_32WorldCode.condition2IsTrue_1.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_2 = gdjs.Game_32WorldCode.condition3IsTrue_1;
-gdjs.Game_32WorldCode.conditionTrue_2.val = runtimeScene.getOnceTriggers().triggerOnce(8465364);
+gdjs.Game_32WorldCode.conditionTrue_2.val = runtimeScene.getOnceTriggers().triggerOnce(8558460);
 }
 }}
 }
@@ -562,7 +562,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32WorldCode.GDPlayerObjects4.length;i<l;++i)
 gdjs.Game_32WorldCode.GDPlayerObjects4.length = k;}if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7994428);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8560964);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -640,7 +640,7 @@ gdjs.Game_32WorldCode.GDPlayerObjects3.length = k;}if (gdjs.Game_32WorldCode.con
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8471260);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8565124);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.Game_32WorldCode.GDPlayerObjects2, gdjs.Game_32WorldCode.GDPlayerObjects3);
@@ -700,7 +700,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32WorldCode.GDPlayerObjects2.length;i<l;++i)
 gdjs.Game_32WorldCode.GDPlayerObjects2.length = k;}if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8473612);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8567476);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -869,7 +869,7 @@ gdjs.Game_32WorldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerE
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8410644);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8496972);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -893,7 +893,7 @@ gdjs.Game_32WorldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerE
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8411692);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8498020);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -965,7 +965,7 @@ gdjs.Game_32WorldCode.condition0IsTrue_0.val = gdjs.evtTools.object.distanceTest
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8475948);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8569812);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -1076,7 +1076,7 @@ gdjs.Game_32WorldCode.GDVillagerObjects4.length = k;}if (gdjs.Game_32WorldCode.c
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8478652);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8572556);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.Game_32WorldCode.GDVillagerObjects4, gdjs.Game_32WorldCode.GDVillagerObjects5);
@@ -1286,7 +1286,7 @@ gdjs.copyArray(runtimeScene.getObjects("Player"), gdjs.Game_32WorldCode.GDPlayer
 }
 
 
-};gdjs.Game_32WorldCode.eventsList20 = function(runtimeScene) {
+};gdjs.Game_32WorldCode.mapOfGDgdjs_46Game_9532WorldCode_46GDGold_9595AttackObjects1Objects = Hashtable.newFrom({"Gold_Attack": gdjs.Game_32WorldCode.GDGold_95AttackObjects1});gdjs.Game_32WorldCode.mapOfGDgdjs_46Game_9532WorldCode_46GDFlowersObjects1Objects = Hashtable.newFrom({"Flowers": gdjs.Game_32WorldCode.GDFlowersObjects1});gdjs.Game_32WorldCode.eventsList20 = function(runtimeScene) {
 
 {
 
@@ -1333,6 +1333,24 @@ gdjs.Game_32WorldCode.GDGold_95AttackObjects1.length = k;}if (gdjs.Game_32WorldC
 /* Reuse gdjs.Game_32WorldCode.GDGold_95AttackObjects1 */
 {for(var i = 0, len = gdjs.Game_32WorldCode.GDGold_95AttackObjects1.length ;i < len;++i) {
     gdjs.Game_32WorldCode.GDGold_95AttackObjects1[i].deleteFromScene(runtimeScene);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Flowers"), gdjs.Game_32WorldCode.GDFlowersObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Gold_Attack"), gdjs.Game_32WorldCode.GDGold_95AttackObjects1);
+
+gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
+{
+gdjs.Game_32WorldCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.Game_32WorldCode.mapOfGDgdjs_46Game_9532WorldCode_46GDGold_9595AttackObjects1Objects, gdjs.Game_32WorldCode.mapOfGDgdjs_46Game_9532WorldCode_46GDFlowersObjects1Objects, false, runtimeScene, false);
+}if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.Game_32WorldCode.GDFlowersObjects1 */
+{for(var i = 0, len = gdjs.Game_32WorldCode.GDFlowersObjects1.length ;i < len;++i) {
+    gdjs.Game_32WorldCode.GDFlowersObjects1[i].setAnimationName("gold");
 }
 }}
 

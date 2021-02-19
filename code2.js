@@ -37,7 +37,7 @@ gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPress
 }
 
 
-};gdjs.OptionsCode.eventsList1 = function(runtimeScene) {
+};gdjs.OptionsCode.mapOfGDgdjs_46OptionsCode_46GDFullscrToggleObjects1Objects = Hashtable.newFrom({"FullscrToggle": gdjs.OptionsCode.GDFullscrToggleObjects1});gdjs.OptionsCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -45,14 +45,31 @@ gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPress
 gdjs.OptionsCode.condition0IsTrue_0.val = false;
 gdjs.OptionsCode.condition1IsTrue_0.val = false;
 {
-gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 }if ( gdjs.OptionsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition1IsTrue_0;
-gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8154748);
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9506764);
 }
 }}
 if (gdjs.OptionsCode.condition1IsTrue_0.val) {
+{runtimeScene.getGame().getVariables().getFromIndex(1).mul(-(1));
+}}
+
+}
+
+
+};gdjs.OptionsCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+gdjs.OptionsCode.condition0IsTrue_0.val = false;
+{
+{gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition0IsTrue_0;
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9383948);
+}
+}if (gdjs.OptionsCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("VolumeSlider"), gdjs.OptionsCode.GDVolumeSliderObjects1);
 {for(var i = 0, len = gdjs.OptionsCode.GDVolumeSliderObjects1.length ;i < len;++i) {
     gdjs.OptionsCode.GDVolumeSliderObjects1[i].getBehavior("DraggableSliderControl").SetValue(gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) / 100, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -78,6 +95,7 @@ for(var i = 0, k = 0, l = gdjs.OptionsCode.GDVolumeSliderObjects1.length;i<l;++i
 gdjs.OptionsCode.GDVolumeSliderObjects1.length = k;}if (gdjs.OptionsCode.condition0IsTrue_0.val) {
 /* Reuse gdjs.OptionsCode.GDVolumeSliderObjects1 */
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber((( gdjs.OptionsCode.GDVolumeSliderObjects1.length === 0 ) ? 0 :gdjs.OptionsCode.GDVolumeSliderObjects1[0].getBehavior("DraggableSliderControl").Value((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) * 100);
+}{gdjs.evtTools.sound.setMusicOnChannelVolume(runtimeScene, 0, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }}
 
 }
@@ -95,6 +113,70 @@ gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdj
 { //Subevents
 gdjs.OptionsCode.eventsList0(runtimeScene);} //End of subevents
 }
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("FullscrToggle"), gdjs.OptionsCode.GDFullscrToggleObjects1);
+
+gdjs.OptionsCode.condition0IsTrue_0.val = false;
+{
+gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.OptionsCode.mapOfGDgdjs_46OptionsCode_46GDFullscrToggleObjects1Objects, runtimeScene, true, false);
+}if (gdjs.OptionsCode.condition0IsTrue_0.val) {
+
+{ //Subevents
+gdjs.OptionsCode.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+gdjs.OptionsCode.condition0IsTrue_0.val = false;
+gdjs.OptionsCode.condition1IsTrue_0.val = false;
+{
+gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) == -(1);
+}if ( gdjs.OptionsCode.condition0IsTrue_0.val ) {
+{
+{gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition1IsTrue_0;
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9385348);
+}
+}}
+if (gdjs.OptionsCode.condition1IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("FullscrToggle"), gdjs.OptionsCode.GDFullscrToggleObjects1);
+{for(var i = 0, len = gdjs.OptionsCode.GDFullscrToggleObjects1.length ;i < len;++i) {
+    gdjs.OptionsCode.GDFullscrToggleObjects1[i].setAnimationName("off");
+}
+}{gdjs.evtTools.window.setFullScreen(runtimeScene, false, true);
+}}
+
+}
+
+
+{
+
+
+gdjs.OptionsCode.condition0IsTrue_0.val = false;
+gdjs.OptionsCode.condition1IsTrue_0.val = false;
+{
+gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) == 1;
+}if ( gdjs.OptionsCode.condition0IsTrue_0.val ) {
+{
+{gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition1IsTrue_0;
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9877124);
+}
+}}
+if (gdjs.OptionsCode.condition1IsTrue_0.val) {
+gdjs.copyArray(runtimeScene.getObjects("FullscrToggle"), gdjs.OptionsCode.GDFullscrToggleObjects1);
+{for(var i = 0, len = gdjs.OptionsCode.GDFullscrToggleObjects1.length ;i < len;++i) {
+    gdjs.OptionsCode.GDFullscrToggleObjects1[i].setAnimationName("on");
+}
+}{gdjs.evtTools.window.setFullScreen(runtimeScene, true, true);
+}}
 
 }
 
@@ -117,7 +199,7 @@ gdjs.OptionsCode.GDVolumeObjects2.length = 0;
 gdjs.OptionsCode.GDtempBackObjects1.length = 0;
 gdjs.OptionsCode.GDtempBackObjects2.length = 0;
 
-gdjs.OptionsCode.eventsList1(runtimeScene);
+gdjs.OptionsCode.eventsList2(runtimeScene);
 return;
 
 }

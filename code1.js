@@ -100,10 +100,13 @@ gdjs.Game_32WorldCode.eventsList0 = function(runtimeScene) {
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8490500);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9327412);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Assets\\Music\\Main Game Theme.mp3", 0, true, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), 1);
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Assets\\Music\\Main Game Theme.mp3", 1, true, 100, 1);
+}{gdjs.evtTools.sound.setMusicOnChannelPlayingOffset(runtimeScene, 1, gdjs.evtTools.sound.getMusicOnChannelPlayingOffset(runtimeScene, 0) + 0.1);
+}{gdjs.evtTools.sound.setMusicOnChannelVolume(runtimeScene, 1, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)));
+}{gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 0);
 }}
 
 }
@@ -161,7 +164,7 @@ gdjs.Game_32WorldCode.eventsList1(runtimeScene);
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8547172);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9397172);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.Game_32WorldCode.GDPlayerObjects3, gdjs.Game_32WorldCode.GDPlayerObjects4);
@@ -399,7 +402,7 @@ gdjs.Game_32WorldCode.conditionTrue_1.val = true && gdjs.Game_32WorldCode.condit
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8555012);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9405012);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -454,7 +457,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32WorldCode.GDPlayerObjects4.length;i<l;++i)
 gdjs.Game_32WorldCode.GDPlayerObjects4.length = k;}if ( gdjs.Game_32WorldCode.condition2IsTrue_1.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_2 = gdjs.Game_32WorldCode.condition3IsTrue_1;
-gdjs.Game_32WorldCode.conditionTrue_2.val = runtimeScene.getOnceTriggers().triggerOnce(8558460);
+gdjs.Game_32WorldCode.conditionTrue_2.val = runtimeScene.getOnceTriggers().triggerOnce(9408460);
 }
 }}
 }
@@ -562,7 +565,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32WorldCode.GDPlayerObjects4.length;i<l;++i)
 gdjs.Game_32WorldCode.GDPlayerObjects4.length = k;}if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8560964);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9410964);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -640,7 +643,7 @@ gdjs.Game_32WorldCode.GDPlayerObjects3.length = k;}if (gdjs.Game_32WorldCode.con
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8565124);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9415124);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.Game_32WorldCode.GDPlayerObjects2, gdjs.Game_32WorldCode.GDPlayerObjects3);
@@ -700,7 +703,7 @@ for(var i = 0, k = 0, l = gdjs.Game_32WorldCode.GDPlayerObjects2.length;i<l;++i)
 gdjs.Game_32WorldCode.GDPlayerObjects2.length = k;}if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8567476);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9417476);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -869,7 +872,7 @@ gdjs.Game_32WorldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerE
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8496972);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9333844);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -893,7 +896,7 @@ gdjs.Game_32WorldCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerE
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8498020);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9334892);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -965,7 +968,7 @@ gdjs.Game_32WorldCode.condition0IsTrue_0.val = gdjs.evtTools.object.distanceTest
 }if ( gdjs.Game_32WorldCode.condition0IsTrue_0.val ) {
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition1IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8569812);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9419812);
 }
 }}
 if (gdjs.Game_32WorldCode.condition1IsTrue_0.val) {
@@ -1076,7 +1079,7 @@ gdjs.Game_32WorldCode.GDVillagerObjects4.length = k;}if (gdjs.Game_32WorldCode.c
 gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 {
 {gdjs.Game_32WorldCode.conditionTrue_1 = gdjs.Game_32WorldCode.condition0IsTrue_0;
-gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8572556);
+gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9422556);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
 gdjs.copyArray(gdjs.Game_32WorldCode.GDVillagerObjects4, gdjs.Game_32WorldCode.GDVillagerObjects5);

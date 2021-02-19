@@ -57,9 +57,19 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(
 
 gdjs.MenuCode.condition0IsTrue_0.val = false;
 {
-gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+{gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition0IsTrue_0;
+gdjs.MenuCode.condition0IsTrue_1.val = false;
+gdjs.MenuCode.condition1IsTrue_1.val = false;
+{
+gdjs.MenuCode.condition0IsTrue_1.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+}if ( gdjs.MenuCode.condition0IsTrue_1.val ) {
+{
+gdjs.MenuCode.condition1IsTrue_1.val = !(gdjs.evtTools.sound.isMusicOnChannelPlaying(runtimeScene, 0));
+}}
+gdjs.MenuCode.conditionTrue_1.val = true && gdjs.MenuCode.condition0IsTrue_1.val && gdjs.MenuCode.condition1IsTrue_1.val;
+}
 }if (gdjs.MenuCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.window.setFullScreen(runtimeScene, true, true);
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Assets\\Music\\Main Theme Basic.mp3", 0, true, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), 1);
 }}
 
 }
@@ -96,7 +106,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8181108);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9319812);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
@@ -140,7 +150,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(7292644);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9322052);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {

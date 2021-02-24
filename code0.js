@@ -44,36 +44,13 @@ gdjs.MenuCode.condition0IsTrue_0.val = false;
 {
 gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 }if (gdjs.MenuCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Options", true);
+{gdjs.evtTools.runtimeScene.pushScene(runtimeScene, "Options");
 }}
 
 }
 
 
 };gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDOptsBtnObjects1Objects = Hashtable.newFrom({"OptsBtn": gdjs.MenuCode.GDOptsBtnObjects1});gdjs.MenuCode.eventsList2 = function(runtimeScene) {
-
-{
-
-
-gdjs.MenuCode.condition0IsTrue_0.val = false;
-{
-{gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition0IsTrue_0;
-gdjs.MenuCode.condition0IsTrue_1.val = false;
-gdjs.MenuCode.condition1IsTrue_1.val = false;
-{
-gdjs.MenuCode.condition0IsTrue_1.val = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
-}if ( gdjs.MenuCode.condition0IsTrue_1.val ) {
-{
-gdjs.MenuCode.condition1IsTrue_1.val = !(gdjs.evtTools.sound.isMusicOnChannelPlaying(runtimeScene, 0));
-}}
-gdjs.MenuCode.conditionTrue_1.val = true && gdjs.MenuCode.condition0IsTrue_1.val && gdjs.MenuCode.condition1IsTrue_1.val;
-}
-}if (gdjs.MenuCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Assets\\Music\\Main Theme Basic.mp3", 0, true, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)), 1);
-}}
-
-}
-
 
 {
 
@@ -106,7 +83,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9319812);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9552628);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
@@ -150,7 +127,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9322052);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9554868);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {

@@ -31,7 +31,7 @@ gdjs.OptionsCode.condition0IsTrue_0.val = false;
 {
 gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 }if (gdjs.OptionsCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Menu", false);
+{gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }}
 
 }
@@ -49,7 +49,7 @@ gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPress
 }if ( gdjs.OptionsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition1IsTrue_0;
-gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9506764);
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9636884);
 }
 }}
 if (gdjs.OptionsCode.condition1IsTrue_0.val) {
@@ -67,7 +67,7 @@ if (gdjs.OptionsCode.condition1IsTrue_0.val) {
 gdjs.OptionsCode.condition0IsTrue_0.val = false;
 {
 {gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition0IsTrue_0;
-gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9383948);
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9632956);
 }
 }if (gdjs.OptionsCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("VolumeSlider"), gdjs.OptionsCode.GDVolumeSliderObjects1);
@@ -143,7 +143,7 @@ gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber
 }if ( gdjs.OptionsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition1IsTrue_0;
-gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9385348);
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9637436);
 }
 }}
 if (gdjs.OptionsCode.condition1IsTrue_0.val) {
@@ -167,7 +167,7 @@ gdjs.OptionsCode.condition0IsTrue_0.val = gdjs.evtTools.common.getVariableNumber
 }if ( gdjs.OptionsCode.condition0IsTrue_0.val ) {
 {
 {gdjs.OptionsCode.conditionTrue_1 = gdjs.OptionsCode.condition1IsTrue_0;
-gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9877124);
+gdjs.OptionsCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9638564);
 }
 }}
 if (gdjs.OptionsCode.condition1IsTrue_0.val) {

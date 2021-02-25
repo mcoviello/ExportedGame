@@ -169,9 +169,8 @@ gdjs.Game_32WorldCode.condition0IsTrue_0.val = false;
 gdjs.Game_32WorldCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9781092);
 }
 }if (gdjs.Game_32WorldCode.condition0IsTrue_0.val) {
-{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Assets\\Music\\Main Theme Basic.mp3", 1, true, 100, 1);
-}{gdjs.evtTools.sound.setMusicOnChannelVolume(runtimeScene, 1, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)));
-}{gdjs.evtTools.sound.stopMusicOnChannel(runtimeScene, 0);
+{gdjs.evtTools.sound.playMusicOnChannel(runtimeScene, "Assets\\Music\\Main Theme Basic.mp3", 0, true, 100, 1);
+}{gdjs.evtTools.sound.setMusicOnChannelVolume(runtimeScene, 0, gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)));
 }}
 
 }

@@ -5,6 +5,8 @@ gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects1= [];
 gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects2= [];
 gdjs.MenuCode.GDStartBtnObjects1= [];
 gdjs.MenuCode.GDStartBtnObjects2= [];
+gdjs.MenuCode.GDCtrlBtnObjects1= [];
+gdjs.MenuCode.GDCtrlBtnObjects2= [];
 gdjs.MenuCode.GDOptsBtnObjects1= [];
 gdjs.MenuCode.GDOptsBtnObjects2= [];
 gdjs.MenuCode.GDBorderObjects1= [];
@@ -50,7 +52,22 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(
 }
 
 
-};gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDOptsBtnObjects1Objects = Hashtable.newFrom({"OptsBtn": gdjs.MenuCode.GDOptsBtnObjects1});gdjs.MenuCode.eventsList2 = function(runtimeScene) {
+};gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDOptsBtnObjects1Objects = Hashtable.newFrom({"OptsBtn": gdjs.MenuCode.GDOptsBtnObjects1});gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDCtrlBtnObjects1Objects = Hashtable.newFrom({"CtrlBtn": gdjs.MenuCode.GDCtrlBtnObjects1});gdjs.MenuCode.eventsList2 = function(runtimeScene) {
+
+{
+
+
+gdjs.MenuCode.condition0IsTrue_0.val = false;
+{
+gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
+}if (gdjs.MenuCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Controls", true);
+}}
+
+}
+
+
+};gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDCtrlBtnObjects1Objects = Hashtable.newFrom({"CtrlBtn": gdjs.MenuCode.GDCtrlBtnObjects1});gdjs.MenuCode.eventsList3 = function(runtimeScene) {
 
 {
 
@@ -83,7 +100,7 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9552628);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9773188);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
@@ -127,13 +144,57 @@ gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.M
 }if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
 {
 {gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
-gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9554868);
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9775428);
 }
 }}
 if (gdjs.MenuCode.condition1IsTrue_0.val) {
 /* Reuse gdjs.MenuCode.GDOptsBtnObjects1 */
 {for(var i = 0, len = gdjs.MenuCode.GDOptsBtnObjects1.length ;i < len;++i) {
     gdjs.MenuCode.GDOptsBtnObjects1[i].setAnimation(0);
+}
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("CtrlBtn"), gdjs.MenuCode.GDCtrlBtnObjects1);
+
+gdjs.MenuCode.condition0IsTrue_0.val = false;
+{
+gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDCtrlBtnObjects1Objects, runtimeScene, true, false);
+}if (gdjs.MenuCode.condition0IsTrue_0.val) {
+/* Reuse gdjs.MenuCode.GDCtrlBtnObjects1 */
+{for(var i = 0, len = gdjs.MenuCode.GDCtrlBtnObjects1.length ;i < len;++i) {
+    gdjs.MenuCode.GDCtrlBtnObjects1[i].setAnimation(1);
+}
+}
+{ //Subevents
+gdjs.MenuCode.eventsList2(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("CtrlBtn"), gdjs.MenuCode.GDCtrlBtnObjects1);
+
+gdjs.MenuCode.condition0IsTrue_0.val = false;
+gdjs.MenuCode.condition1IsTrue_0.val = false;
+{
+gdjs.MenuCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDCtrlBtnObjects1Objects, runtimeScene, true, true);
+}if ( gdjs.MenuCode.condition0IsTrue_0.val ) {
+{
+{gdjs.MenuCode.conditionTrue_1 = gdjs.MenuCode.condition1IsTrue_0;
+gdjs.MenuCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(9914068);
+}
+}}
+if (gdjs.MenuCode.condition1IsTrue_0.val) {
+/* Reuse gdjs.MenuCode.GDCtrlBtnObjects1 */
+{for(var i = 0, len = gdjs.MenuCode.GDCtrlBtnObjects1.length ;i < len;++i) {
+    gdjs.MenuCode.GDCtrlBtnObjects1[i].setAnimation(0);
 }
 }}
 
@@ -151,12 +212,14 @@ gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects1.length = 0;
 gdjs.MenuCode.GDParticle_95Gold_95GlitterObjects2.length = 0;
 gdjs.MenuCode.GDStartBtnObjects1.length = 0;
 gdjs.MenuCode.GDStartBtnObjects2.length = 0;
+gdjs.MenuCode.GDCtrlBtnObjects1.length = 0;
+gdjs.MenuCode.GDCtrlBtnObjects2.length = 0;
 gdjs.MenuCode.GDOptsBtnObjects1.length = 0;
 gdjs.MenuCode.GDOptsBtnObjects2.length = 0;
 gdjs.MenuCode.GDBorderObjects1.length = 0;
 gdjs.MenuCode.GDBorderObjects2.length = 0;
 
-gdjs.MenuCode.eventsList2(runtimeScene);
+gdjs.MenuCode.eventsList3(runtimeScene);
 return;
 
 }

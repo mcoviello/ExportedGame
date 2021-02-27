@@ -17,6 +17,8 @@ gdjs.ControlsCode.GDtempBackObjects1= [];
 gdjs.ControlsCode.GDtempBackObjects2= [];
 gdjs.ControlsCode.GDNewObjectObjects1= [];
 gdjs.ControlsCode.GDNewObjectObjects2= [];
+gdjs.ControlsCode.GDDevCheatsObjects1= [];
+gdjs.ControlsCode.GDDevCheatsObjects2= [];
 
 gdjs.ControlsCode.conditionTrue_0 = {val:false};
 gdjs.ControlsCode.condition0IsTrue_0 = {val:false};
@@ -79,6 +81,8 @@ gdjs.ControlsCode.GDtempBackObjects1.length = 0;
 gdjs.ControlsCode.GDtempBackObjects2.length = 0;
 gdjs.ControlsCode.GDNewObjectObjects1.length = 0;
 gdjs.ControlsCode.GDNewObjectObjects2.length = 0;
+gdjs.ControlsCode.GDDevCheatsObjects1.length = 0;
+gdjs.ControlsCode.GDDevCheatsObjects2.length = 0;
 
 gdjs.ControlsCode.eventsList1(runtimeScene);
 return;
